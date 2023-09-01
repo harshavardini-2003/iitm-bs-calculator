@@ -7,11 +7,13 @@ This is a program that calculates the minimum marks you need in the final exam t
 name = input("What is your name? ")
 quiz1 = float(input("What percentage did you score in Quiz 1? "))
 quiz2 = float(input("What percentage did you score in Quiz 2? "))
+gaa = float(input("Whats is you average score in best 10 week of assignments"))
 
 weighted_quiz1 = 0.2 * quiz1
 weighted_quiz2 = 0.3 * quiz2
+weighted_gaa = 0.1 * gaa
 
-total_weighted_marks = weighted_quiz1 + weighted_quiz2
+total_weighted_marks = weighted_quiz1 + weighted_quiz2 + weighted_gaa
 
 if quiz2 > quiz1:
     weighted_quiz2 = 0.2 * quiz2
